@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page_container{
+    padding: 1em 2%;
+}
+.section_container{
+    padding: 1em 2%;
+}
+
+
+ #skew .box{
+     margin-top: 1em;
+    width: 10%;
+    height: 7em;
+    background-color: rebeccapurple; 
+    transition: transform 5s;
+}
+
+#skew .box:hover{
+    transform: skewX(20deg);
+}
+
+#scale .box{
+    margin-top: 1em;
+    width: 10%;
+    height: 7em;
+    background: purple;
+    transition: transform 5s;
+}
+
+#scale .box:hover{
+    transform: scale(.75, .75);
+}
+
+#rotate .box{
+    margin-top: 1em;
+    width: 10%;
+    height: 7em;
+    background-color: purple;
+    transition: transform 5s;
+}
+
+#rotate .box:hover{
+    transform: rotate(360deg);
+}
+
+#translate .box{
+    margin-top: 1em;
+    width: 10%;
+    height: 7rem;
+    background-color: purple;
+    transition: transform 5s;
+}
+
+#translate .box:hover{
+    transform: translateX(40rem) rotate(360deg);
+}
+
+#timing_function .box{
+    margin-top: 2em;
+    width: 10%;
+    height: 3em;
+    border-radius: 10%;
+    text-align: center;
+    font-weight: bold;
+    padding: .95em;
+    color: #fff;
+    background-color: #666;
+}
+
+#timing_function .box.linear{
+    transition: transform 2s linear;
+}
+
+#timing_function .box.linear:hover{
+    transform: translateX(40em);
+}
+
+#timing_function .box.ease{
+    transition: transform 2s ease;
+}
+#timing_function .box.ease:hover{
+    transform: translateX(40em);
+}
+
+#timing_function .box.ease_in{
+    transition: transform 2s ease-in;
+}
+#timing_function .box.ease_in:hover{
+    transform: translateX(40em);
+}
+
+#timing_function .box.ease_out{
+    transition: transform 2s ease-out;
+}
+
+#timing_function .box.ease_out:hover{
+    transform: translateX(40em);
+}
+#timing_function .box.ease_in_out{
+    transition: transform 2s ease-in-out;
+}
+#timing_function .box.ease_in_out:hover{
+    transform: translateX(40em);
+}
+
+#gear{
+    height: 25rem;
+    padding: 1em;
+    position: relative;
+}
+
+#gear .small{
+    position: absolute;
+    left: 20px;
+    top: 90px;
+    transition: transform 10s ease;
+}
+
+#gear:hover .small{
+    transform: rotate(2880deg);
+}
+
+#gear .large{
+    position: absolute;
+    left: 180px;
+    transition: transform 10s .1s ease;
+}
+#gear:hover .large {
+    transform: rotate(-2880deg);
+}
+
+#cycling{
+    margin-top: 1rem;
+}
+#cycling .cyclist{
+    transition: transform 10s 1s ease;
+}
+#cycling .cyclist:hover{
+    transform: translateX(1700px);
+    
+
+}

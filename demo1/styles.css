@@ -1,0 +1,42 @@
+.container{
+    padding: 2rem 5%;
+}
+
+    /*Styles for color change*/
+
+#color .box{
+    width:10%;
+    height: 8rem; 
+    background-color: red; 
+    transition: background-color 5s;
+}
+#color .box:hover{
+    background-color: green;
+}
+
+    /*styles for shape change*/
+
+    #shape .box{
+        width: 10%;
+        height: 8rem;
+        background-color: red; 
+        transition: border-radius 5s linear;
+    }
+
+    #shape .box:hover{
+        border-radius: 50%;
+    }
+
+    /*styles for color change then shape change*/
+
+    #color_shape .box{
+        width: 10%;
+        height: 8rem;
+        background-color: red;
+        transition: background-color 5s 5s,border-radius 5s 0s;
+    }
+
+    #color_shape .box:hover{
+        background-color: green;
+        border-radius: 50%;
+    }
